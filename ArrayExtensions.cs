@@ -14,7 +14,7 @@ namespace PadawansTask11
             {
                 throw new ArgumentException();
             }
-            if (accuracy > 1 | accuracy < 0)
+            if (accuracy >= 1 || accuracy <= 0)
             {
                 throw new ArgumentOutOfRangeException();
             }
