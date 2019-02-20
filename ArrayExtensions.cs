@@ -13,7 +13,11 @@ namespace PadawansTask11
             if (array.Length == 0)
             {
                 throw new ArgumentException();
-            }    
+            }
+            if (accuracy > 1 | accuracy < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
             // Leftside sum
             double[] prefixSum = new double[array.Length];
             prefixSum[0] = array[0];
